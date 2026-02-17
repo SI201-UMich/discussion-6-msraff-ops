@@ -141,6 +141,10 @@ class HorseRaces:
 
         for horse, races in self.race_dict.items():
             times = list(races.values())
+            average = sum(times) / len(times)
+            result[horse] = average
+
+        return result
 
         pass
 
